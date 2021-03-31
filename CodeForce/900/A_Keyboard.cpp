@@ -17,11 +17,7 @@ int main()
         {
             if (str[i] == charArr[j])
             {
-                if (j + direction < 0 || j + direction > 29)
-                    ch = charArr[j - (direction * 9)];
-                else
-                    ch = charArr[j + direction];
-                std::cout << ch;
+                std::cout << charArr[j + direction];
                 break;
             }
             j++;

@@ -26,7 +26,7 @@
 * `N` - Repeat search backword
 
 &nbsp;
-### 💠 Jump / Hop
+### 💠 Jump
 **`🔹 Char (Inside Current Line)`**
 * `fc` - Go forward to character `c`
 * `Fc` - Go backward to character `c`
@@ -118,7 +118,7 @@
 
 **`🔹 Undo/Redo`**
 * `u` - Undo changes
-* `Ctrl + c + r` - Redo
+* `Ctrl + r` - Redo
 
 
 

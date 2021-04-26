@@ -117,7 +117,8 @@
 * `X` - Delete current word and insert (Custom `bdwa`)
 * `dd` - Delete current line
 * `S` - Delete current line and insert
-* `C` - Delete until end of line and insert 
+* `D` - Delete the rest of the line
+* `C` - Delete the rest of the line and insert 
 
 <br>
 

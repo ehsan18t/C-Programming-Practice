@@ -94,9 +94,9 @@
 &nbsp;
 
 ### 💠 Copy
-* `yy` - Copy current line
 * `y` - Copy selected (Only in visual mode)
-* `yw` - Copy word
+* `yy` - Copy current line
+* `yw` - Copy current word
 * `yj` - Copy current and previous line
 * `yk` - Copy current and next line
 

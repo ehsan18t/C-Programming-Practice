@@ -27,6 +27,14 @@
 
 &nbsp;
 ### 💠 Jump / Hop
+**`🔹 Char (Inside Current Line)`**
+* `fc` - Go forward to character `c`
+* `Fc` - Go backward to character `c`
+* `tc` - Go forward before character `c`
+* `Tc` - Go backward before character `c
+
+<br>
+
 **`🔹 Word`**
 * `e` - Last char before space
 * `w` - Next word (first char)
@@ -37,12 +45,16 @@
 
 <br>
 
-**`🔹 Line`**
+**`🔹 Current Line`**
 * `0` - Start of the line
 * `^` - Start of the line (after whitespace)
 * `I` - Start of the line and insert (after whitespace)
 * `$` - End of the line
 * `A` - End of the line and insert
+
+<br>
+
+**`🔹 Line`**
 * `o` - Next line and insert
 * `O` - Previous line and insert
 * `gg` - First line

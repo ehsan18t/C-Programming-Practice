@@ -31,7 +31,7 @@
 * `fc` - Go forward to character `c`
 * `Fc` - Go backward to character `c`
 * `tc` - Go forward before character `c`
-* `Tc` - Go backward before character `c
+* `Tc` - Go backward before character `c`
 
 <br>
 

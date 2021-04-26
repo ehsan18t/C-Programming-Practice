@@ -3,8 +3,6 @@
 * `ESC` / `Ctrl + [` - Normal Mode
 * `a` - Insert Mode (After Current Char)
 * `i` - Insert Mode (Before Current Char)
-* `o` - Insert Mode in next line
-* `O` - Insert Mode in previous line
 * `v` - Visual Mode / Selection Mode
 * `:` - Command Mode
 
@@ -34,6 +32,8 @@
 * `I` - Start of the line and insert (after whitespace)
 * `$` - End of the line
 * `A` - End of the line and insert
+* `o` - Next line and insert
+* `O` - Previous line and insert
 * `gg` - First line
 * `G` - Last line
 * `:n` - Goto n line
@@ -93,4 +93,3 @@
 #### **`Undo/Redo`**
 * `u` - Undo changes
 * `Ctrl + c + r` - Redo
-

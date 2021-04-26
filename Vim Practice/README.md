@@ -5,7 +5,7 @@
 </div>
 
 &nbsp;
-### Mode
+### 💠 Mode
 * `ESC` / `Ctrl + [` - Normal Mode
 * `a` - Insert Mode (After Current Char)
 * `i` - Insert Mode (Before Current Char)
@@ -13,21 +13,21 @@
 * `:` - Command Mode
 
 &nbsp;
-### Arrow
+### 💠 Arrow
 * `h` - Left arrow
 * `l` - Right arrow
 * `j` - Down arrow
 * `k` - Up arrow
 
 &nbsp;
-### Search
+### 💠 Search
 * `/pattern` - Search forword
 * `?pattern` - Search backword
 * `n` - Repeat search forword
 * `N` - Repeat search backword
 
 &nbsp;
-### Jump / Hop
+### 💠 Jump / Hop
 #### **`Word`**
 * `e` - Last char before space
 * `w` - Next word (first char)
@@ -69,7 +69,7 @@
 
 &nbsp;
 
-### Select
+### 💠 Select
 * `ve` - Select untill next space
 * `vw` - Select untill next word
 * `V` - Select current line
@@ -77,7 +77,7 @@
 
 &nbsp;
 
-### Copy
+### 💠 Copy
 * `yy` - Copy current line
 * `y` - Copy selected (Only in visual mode)
 * `yw` - Copy word
@@ -86,7 +86,7 @@
 
 &nbsp;
 
-### Editing
+### 💠 Editing
 #### **`Paste`**
 * `p` - Paste next 
 * `P` - Paste Previous

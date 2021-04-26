@@ -31,7 +31,9 @@
 #### **`Line`**
 * `0` - Start of the line
 * `^` - Start of the line (after whitespace)
+* `I` - Start of the line and insert (after whitespace)
 * `$` - End of the line
+* `A` - End of the line and insert
 * `gg` - First line
 * `G` - Last line
 * `:n` - Goto n line
@@ -91,3 +93,4 @@
 #### **`Undo/Redo`**
 * `u` - Undo changes
 * `Ctrl + c + r` - Redo
+

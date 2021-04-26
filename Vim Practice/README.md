@@ -150,6 +150,16 @@
 
 &nbsp;
 
+**🔹 Disable Vim arrow controls**
+```
+"vim.handleKeys": {
+		"<": false,
+		">": false
+    }
+```
+
+&nbsp;
+
 **🔹 Enable `jj` to `Normal Mode`**
 ```json
 "vim.insertModeKeyBindingsNonRecursive": [

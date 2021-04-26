@@ -116,6 +116,8 @@
 &nbsp;
 ### 💠 Important VSCode Configuaration for New Users
 
+&nbsp;
+
 **Disable Vim `ctrl+c` `ctrl+v` `ctrl+x` commands in VSCode**
 ```json
 "vim.handleKeys": {

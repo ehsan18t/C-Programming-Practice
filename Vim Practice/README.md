@@ -35,7 +35,8 @@
 * `*` - Next same word
 * `#` - Previous same word
 
-&nbsp;
+<br>
+
 **`🔹 Line`**
 * `0` - Start of the line
 * `^` - Start of the line (after whitespace)
@@ -49,7 +50,8 @@
 * `:n` - Goto n line
 * `nG` - Goto n line
 
-&nbsp;
+<br>
+
 **`🔹 Window`**
 * `zz` - Center this line
 * `zt` - Top this line
@@ -58,7 +60,8 @@
 * `M` - Middle of screen
 * `L` - Bottom of screen
 
-&nbsp;
+<br>
+
 **`🔹 Tab`**
 * `:tabclose` - Close current tab
 * `:tabfirst` - First tab
@@ -90,7 +93,8 @@
 * `p` - Paste next 
 * `P` - Paste Previous
 
-&nbsp;
+<br>
+
 **`🔹 Delete`**
 * `dd` - Delete line
 * `dw` - Delete current word
@@ -98,7 +102,8 @@
 * `S` - Delete current line and insert
 * `C` - Delete until end of line and insert 
 
-&nbsp;
+<br>
+
 **`🔹 Undo/Redo`**
 * `u` - Undo changes
 * `Ctrl + c + r` - Redo

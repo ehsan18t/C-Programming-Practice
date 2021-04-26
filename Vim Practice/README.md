@@ -1,4 +1,11 @@
-# Beginner Vim Cheatsheet for Beginners
+<center>
+
+# Beginner Vim Cheatsheet for Beginners </h1
+### (These commands are tested in `VSCode` with `Vim plugin`)
+
+</center>
+
+&nbsp;
 ### Mode
 * `ESC` / `Ctrl + [` - Normal Mode
 * `a` - Insert Mode (After Current Char)
@@ -103,6 +110,7 @@
 
 
 
+&nbsp;
 ## Important VSCode Configuaration for New Users
 #### **Disable Vim `ctrl+c` `ctrl+v` `ctrl+x` commands in VSCode**
 ```json

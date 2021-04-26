@@ -20,10 +20,10 @@
 
 &nbsp;
 ### 💠 Search
-* `/pattern` - Search forword
-* `?pattern` - Search backword
-* `n` - Repeat search forword
-* `N` - Repeat search backword
+* `/pattern` - Search forward
+* `?pattern` - Search backward
+* `n` - Repeat search forward
+* `N` - Repeat search backward
 
 &nbsp;
 ### 💠 Jump
@@ -32,6 +32,8 @@
 * `Fc` - Go backward to character `c`
 * `tc` - Go forward before character `c`
 * `Tc` - Go backward before character `c`
+* `;` - Go forward next
+* `,` - Go backward next
 
 <br>
 

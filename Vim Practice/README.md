@@ -86,8 +86,8 @@
 &nbsp;
 
 ### 💠 Select
-* `ve` - Select untill next space
-* `vw` - Select untill next word (Highlight word)
+* `ve` - Select until next space
+* `vw` - Select until next word (Highlight word)
 * `V` - Select current line
 * `v` - Select current char (Highlight char)
 
@@ -129,12 +129,12 @@
 <br>
 
 **`🔹 Note:`**
-* All keys mentioned here can be cinbined with one another.
-    * Example: `ct)` can delete everything untill  `)`. That means it can be used for clear function parameter or something. Here `c` means `cut` and `t)` means forward untill char `)`.
+* All keys mentioned above can be combined with one another.
+    * Example: `ct)` can delete everything until  `)`. That means it can be used for clear function parameter or something. Here `c` means `cut` and `t)` means forward until char `)`.
 
 
 &nbsp;
-### 💠 Important VSCode Configuarations for New Users
+### 💠 Important VSCode Configurations for New Users
 
 &nbsp;
 

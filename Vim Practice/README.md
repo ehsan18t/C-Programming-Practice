@@ -110,9 +110,11 @@
 <br>
 
 **`🔹 Delete`**
-* `dd` - Delete line
-* `dw` - Delete current word
+* `x` - Delete current char
 * `s` - Delete current char and insert
+* `dw` - Delete current word
+* `X` - Delete current word and insert (Custom `bdwa`)
+* `dd` - Delete current line
 * `S` - Delete current line and insert
 * `C` - Delete until end of line and insert 
 
@@ -150,6 +152,17 @@
         {
             "before": ["j", "j"],
             "after": ["<esc>"]
+        }
+    ]
+```
+&nbsp;
+
+**🔹 Enable `X` to `Delete Current Word and Insert`**
+```json
+"vim.normalModeKeyBindings": [
+        {
+            "before": ["X"],
+            "after": ["b","d","w","a"]
         }
     ]
 ```

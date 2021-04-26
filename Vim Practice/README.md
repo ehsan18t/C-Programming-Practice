@@ -1,5 +1,5 @@
 <div align="center">
-<h1 align="center">Beginner Vim Cheatsheet for Beginners</h1>
+<h1 align="center">Vim Cheatsheet for Beginners</h1>
 <Strong>These commands are tested in VSCode with Vim plugin.</strong>
 </div>
 

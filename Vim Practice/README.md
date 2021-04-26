@@ -73,9 +73,9 @@
 
 ### 💠 Select
 * `ve` - Select untill next space
-* `vw` - Select untill next word
+* `vw` - Select untill next word (Highlight word)
 * `V` - Select current line
-* `v` - Select current char
+* `v` - Select current char (Highlight char)
 
 &nbsp;
 
@@ -120,6 +120,7 @@
 
 **🔹 Disable Vim `ctrl+c` `ctrl+v` `ctrl+x` commands**
 ```json
+"vim.useCtrlKeys": true,
 "vim.handleKeys": {
 		"<C-c>": false,
 		"<C-x>": false,

@@ -1,8 +1,7 @@
 <center>
+<h1> Beginner Vim Cheatsheet for Beginners </h1>
 
-# Beginner Vim Cheatsheet for Beginners
-### (These commands are tested in `VSCode` with `Vim plugin`)
-
+(These commands are tested in `VSCode` with `Vim plugin`)
 </center>
 
 &nbsp;

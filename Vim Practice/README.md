@@ -1,17 +1,23 @@
-# Beginner Vim Cheatsheet
+# Beginner Vim Cheatsheet for Beginners
 ### Mode
 * `ESC` / `Ctrl + [` - Normal Mode
 * `a` - Insert Mode (After Current Char)
 * `i` - Insert Mode (Before Current Char)
+* `o` - Insert Mode in next line
+* `O` - Insert Mode in previous line
 * `v` - Visual Mode / Selection Mode
 * `:` - Command Mode
 
+&nbsp;
+&nbsp;
 ### Arrow
 * `h` - Left arrow
 * `l` - Right arrow
 * `j` - Down arrow
 * `k` - Up arrow
 
+&nbsp;
+&nbsp;
 ### Jump / Hop
 #### **`Word`**
 * `e` - Last char before space
@@ -20,6 +26,8 @@
 * `ge` - Previous Word (last char)
 * `*` - Next same word
 * `#` - Previous same word
+
+&nbsp;
 #### **`Line`**
 * `0` - Start of the line
 * `^` - Start of the line (after whitespace)
@@ -28,6 +36,8 @@
 * `G` - Last line
 * `:n` - Goto n line
 * `nG` - Goto n line
+
+&nbsp;
 #### **`Window`**
 * `zz` - Center this line
 * `zt` - Top this line
@@ -35,6 +45,8 @@
 * `H` - Top of screen
 * `M` - Middle of screen
 * `L` - Bottom of screen
+
+&nbsp;
 #### **`Tab`**
 * `:tabclose` - Close current tab
 * `:tabfirst` - First tab
@@ -42,11 +54,15 @@
 * `:tabn` - Next tab
 * `tabp` - Previous tab
 
+&nbsp;
+
 ### Select
 * `ve` - Select untill next space
 * `vw` - Select untill next word
 * `V` - Select current line
 * `v` - Select current char
+
+&nbsp;
 
 ### Copy
 * `yy` - Copy current line
@@ -54,3 +70,24 @@
 * `yw` - Copy word
 * `yj` - Copy current and previous line
 * `yk` - Copy current and next line
+
+&nbsp;
+&nbsp;
+
+### Editing
+#### **`Paste`**
+* `p` - Paste next 
+* `P` - Paste Previous
+
+&nbsp;
+#### **`Delete`**
+* `dd` - Delete line
+* `dw` - Delete current word
+* `s` - Delete current char and insert
+* `S` - Delete current line and insert
+* `C` - Delete until end of line and insert 
+
+&nbsp;
+#### **`Undo/Redo`**
+* `u` - Undo changes
+* `Ctrl + c + r` - Redo

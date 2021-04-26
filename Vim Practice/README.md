@@ -112,6 +112,7 @@
 **`🔹 Delete`**
 * `x` - Delete current char
 * `s` - Delete current char and insert
+* `cw` - Delete all char before space and insert (from cursor)
 * `dw` - Delete current word
 * `X` - Delete current word and insert (Custom `bdwa`)
 * `dd` - Delete current line

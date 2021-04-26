@@ -66,13 +66,22 @@
 
 <br>
 
-**`🔹 Window`**
+**`🔹 Block / Paragraph`**
+* `{` - Move up
+* `}` - Move down
+* `%` - Jump between braces (`(` `)`, `{` `}`, `[` `]`)
+
+<br>
+
+**`🔹 Window / Page`**
 * `zz` - Center this line
 * `zt` - Top this line
 * `zb` - Bottom this line
 * `H` - Top of screen
 * `M` - Middle of screen
 * `L` - Bottom of screen
+* `Ctrl + u` - Page up (Half page)
+* `Ctrl + d` - Page down (Half page)
 
 <br>
 
@@ -114,7 +123,7 @@
 * `s` - Delete current char and insert
 * `cw` - Delete all char before space and insert (from cursor)
 * `dw` - Delete current word
-* `X` - Delete current word and insert (Custom `bdwa`)
+* `X` - Delete current word and insert (Custom `bdwi`)
 * `dd` - Delete current line
 * `S` - Delete current line and insert
 * `D` - Delete the rest of the line
@@ -129,9 +138,13 @@
 
 <br>
 
-### 💠 Notes
+### 💠 Notes & Combos
 * All keys mentioned above can be combined with one another.
     * Example: `ct)` can delete everything until `)`. That means it can be used for clear function parameter or something like that. Here `c` means `cut` and `t)` means forward until char `)`.
+* `di{` - Delete everything inside `{}`
+* `d2i{` - Delete everything inside `{}` and its surround `{}`.
+* `ct}` - Delete everything until `}` and insert.
+* `v5$d` - Delete next 5 lines including current.
 
 
 &nbsp;
@@ -177,7 +190,7 @@
 "vim.normalModeKeyBindings": [
         {
             "before": ["X"],
-            "after": ["b","d","w","a"]
+            "after": ["b","d","w","i"]
         }
     ]
 ```

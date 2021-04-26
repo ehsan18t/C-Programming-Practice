@@ -130,7 +130,7 @@
 
 ### 💠 Notes
 * All keys mentioned above can be combined with one another.
-    * Example: `ct)` can delete everything until `)`. That means it can be used for clear function parameter or something. Here `c` means `cut` and `t)` means forward until char `)`.
+    * Example: `ct)` can delete everything until `)`. That means it can be used for clear function parameter or something like that. Here `c` means `cut` and `t)` means forward until char `)`.
 
 
 &nbsp;
@@ -151,7 +151,7 @@
 &nbsp;
 
 **🔹 Disable Vim arrow controls**
-```
+```json
 "vim.handleKeys": {
 		"<": false,
 		">": false

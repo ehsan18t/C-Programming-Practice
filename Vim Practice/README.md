@@ -1,7 +1,6 @@
 <div align="center">
-<h1 align="center">Beginner Vim Cheatsheet for Beginners </h1>
-
-### These commands are tested in `VSCode` with `Vim plugin`.
+<h1 align="center">Beginner Vim Cheatsheet for Beginners</h1>
+<h2>These commands are tested in VSCode with Vim plugin.</h2>
 </div>
 
 &nbsp;
@@ -28,7 +27,7 @@
 
 &nbsp;
 ### 💠 Jump / Hop
-**`Word`**
+**`🔹 Word`**
 * `e` - Last char before space
 * `w` - Next word (first char)
 * `b` - Previous word (first char)
@@ -37,7 +36,7 @@
 * `#` - Previous same word
 
 &nbsp;
-**`Line`**
+**`🔹 Line`**
 * `0` - Start of the line
 * `^` - Start of the line (after whitespace)
 * `I` - Start of the line and insert (after whitespace)
@@ -51,7 +50,7 @@
 * `nG` - Goto n line
 
 &nbsp;
-**`Window`**
+**`🔹 Window`**
 * `zz` - Center this line
 * `zt` - Top this line
 * `zb` - Bottom this line
@@ -60,7 +59,7 @@
 * `L` - Bottom of screen
 
 &nbsp;
-**`Tab`**
+**`🔹 Tab`**
 * `:tabclose` - Close current tab
 * `:tabfirst` - First tab
 * `:tablast` - Last tab
@@ -87,12 +86,12 @@
 &nbsp;
 
 ### 💠 Editing
-**`Paste`**
+**`🔹 Paste`**
 * `p` - Paste next 
 * `P` - Paste Previous
 
 &nbsp;
-**`Delete`**
+**`🔹 Delete`**
 * `dd` - Delete line
 * `dw` - Delete current word
 * `s` - Delete current char and insert
@@ -100,7 +99,7 @@
 * `C` - Delete until end of line and insert 
 
 &nbsp;
-**`Undo/Redo`**
+**`🔹 Undo/Redo`**
 * `u` - Undo changes
 * `Ctrl + c + r` - Redo
 
@@ -110,7 +109,7 @@
 
 
 &nbsp;
-## 💠 Important VSCode Configuaration for New Users
+### 💠 Important VSCode Configuaration for New Users
 **Disable Vim `ctrl+c` `ctrl+v` `ctrl+x` commands in VSCode**
 ```json
 "vim.handleKeys": {

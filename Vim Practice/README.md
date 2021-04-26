@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center">Beginner Vim Cheatsheet for Beginners</h1>
-<h2>These commands are tested in VSCode with Vim plugin.</h2>
+<Strong>These commands are tested in VSCode with Vim plugin.</strong>
 </div>
 
 &nbsp;

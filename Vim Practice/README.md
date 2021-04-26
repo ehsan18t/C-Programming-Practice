@@ -7,7 +7,6 @@
 * `:` - Command Mode
 
 &nbsp;
-&nbsp;
 ### Arrow
 * `h` - Left arrow
 * `l` - Right arrow
@@ -15,6 +14,12 @@
 * `k` - Up arrow
 
 &nbsp;
+### Search
+* `/pattern` - Search forword
+* `?pattern` - Search backword
+* `n` - Repeat search forword
+* `N` - Repeat search backword
+
 &nbsp;
 ### Jump / Hop
 #### **`Word`**
@@ -74,7 +79,6 @@
 * `yk` - Copy current and next line
 
 &nbsp;
-&nbsp;
 
 ### Editing
 #### **`Paste`**
@@ -93,3 +97,18 @@
 #### **`Undo/Redo`**
 * `u` - Undo changes
 * `Ctrl + c + r` - Redo
+
+
+
+
+
+
+## Important VSCode Configuaration for New Users
+#### **Disable Vim `ctrl+c` `ctrl+v` `ctrl+x` commands in VSCode**
+```json
+"vim.handleKeys": {
+		"<C-c>": false,
+		"<C-x>": false,
+		"<C-v>": false
+	}
+```

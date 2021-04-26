@@ -122,7 +122,8 @@
 * `x` - Delete current char
 * `s` - Delete current char and insert
 * `cw` - Delete all char before space and insert (from cursor)
-* `dw` - Delete current word
+* `dw` - Delete until next word
+* `diw` - Delete current word
 * `X` - Delete current word and insert (Custom `bdwi`)
 * `dd` - Delete current line
 * `S` - Delete current line and insert
@@ -145,7 +146,11 @@
 * `d2i{` - Delete everything inside `{}` and its surround `{}`.
 * `ct}` - Delete everything until `}` and insert.
 * `v5$d` - Delete next 5 lines including current.
-
+* `cip` - Delete paragraph and insert
+* `di(` - Delete everything inside `()`
+* `yi(` - Copy everything inside `()`
+* `vi(` - Highlight everything inside `()`
+* `diw` - Delete current word
 
 &nbsp;
 ### 💠 Important VSCode Configurations for New Users

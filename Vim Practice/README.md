@@ -118,7 +118,7 @@
 
 &nbsp;
 
-**🔹 Disable Vim `ctrl+c` `ctrl+v` `ctrl+x` commands in VSCode**
+**🔹 Disable Vim `ctrl+c` `ctrl+v` `ctrl+x` commands**
 ```json
 "vim.handleKeys": {
 		"<C-c>": false,

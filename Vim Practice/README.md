@@ -126,8 +126,11 @@
 * `Ctrl + r` - Redo
 
 
+<br>
 
-
+**`🔹 Note:`**
+* All keys mentioned here can be cinbined with one another.
+    * Example: `ct)` can delete everything untill  `)`. That means it can be used for clear function parameter or something. Here `c` means `cut` and `t)` means forward untill char `)`.
 
 
 &nbsp;

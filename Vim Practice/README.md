@@ -115,6 +115,7 @@
 
 &nbsp;
 ### 💠 Important VSCode Configuaration for New Users
+
 **Disable Vim `ctrl+c` `ctrl+v` `ctrl+x` commands in VSCode**
 ```json
 "vim.handleKeys": {
@@ -122,4 +123,16 @@
 		"<C-x>": false,
 		"<C-v>": false
 	}
+```
+
+&nbsp;
+
+**Enable `jj` to `Normal Mode`**
+```json
+"vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j", "j"],
+            "after": ["<esc>"]
+        }
+    ]
 ```

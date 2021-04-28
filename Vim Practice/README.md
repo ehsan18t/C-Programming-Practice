@@ -159,7 +159,8 @@
 * `di{` - Delete everything inside `{}`
 * `d2i{` - Delete everything inside `{}` and its surround `{}`.
 * `ct}` - Delete everything until `}` and insert.
-* `v5$d` / `d5$` - Delete next 5 lines including current.
+* `d5$` - Delete next 5 lines after cursor.
+* `0d5$` - Delete next 5 lines including current.
 * `cip` - Delete paragraph and insert
 * `di(` - Delete everything inside `()`
 * `yi(` - Copy everything inside `()`

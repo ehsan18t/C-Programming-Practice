@@ -9,6 +9,7 @@
 * `a` - Insert Mode (After Current Char)
 * `i` - Insert Mode (Before Current Char)
 * `v` - Visual Mode / Selection Mode
+* `R` - Replace Mode
 * `:` - Command Mode
 
 &nbsp;
@@ -135,6 +136,13 @@
 **`🔹 Undo/Redo`**
 * `u` - Undo changes
 * `Ctrl + r` - Redo
+
+
+<br>
+
+**`🔹 Replace`**
+* `r` - Replace one character
+* `R` - Replace multiple character (Replace Mode)
 
 
 <br>

@@ -131,12 +131,6 @@
 * `D` - Delete the rest of the line
 * `C` - Delete the rest of the line and insert 
 
-<br>
-
-**`🔹 Undo/Redo`**
-* `u` - Undo changes
-* `Ctrl + r` - Redo
-
 
 <br>
 
@@ -147,6 +141,12 @@
 
 <br>
 
+**`🔹 Undo/Redo`**
+* `u` - Undo changes
+* `Ctrl + r` - Redo
+
+
+<br>
 
 ### 💠 Exit
 * `:q` - Close file

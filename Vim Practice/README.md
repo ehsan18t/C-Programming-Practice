@@ -199,3 +199,9 @@
         }
     ]
 ```
+&nbsp;
+
+**🔹 Enable vim to use `System Clipboard`**
+```json
+"vim.useSystemClipboard": true
+```

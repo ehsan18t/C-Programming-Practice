@@ -139,6 +139,20 @@
 
 <br>
 
+
+### 💠 Exit
+* `:q` - Close file
+* `:q!` - Close file, abandon changes
+* `:qa` - Close all files
+* `:qa!` - Close all files, abandon changes
+* `:w` - Save changes
+* `:wq` / `:x` - Save and close file
+* `ZZ` - Save and quit
+* `ZQ` - Quit without checking changes
+
+<br>
+
+
 ### 💠 Notes & Combos
 * All keys mentioned above can be combined with one another.
     * Example: `ct)` can delete everything until `)`. That means it can be used for clear function parameter or something like that. Here `c` means `cut` and `t)` means forward until char `)`.

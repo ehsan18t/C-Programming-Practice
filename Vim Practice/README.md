@@ -245,7 +245,7 @@
             ] 
         }, 
         { 
-            "before": ["<C-r>"], 
+            "before": ["<C-r>"],
             "after": [],
             "commands": [
                 {
@@ -257,3 +257,16 @@
     ]
 ```
 
+&nbsp;
+
+**🔹 Enable move cursor to each wrapped line (if wrap line enable)**
+```json
+    {
+        "before": ["j"],
+        "after": ["g", "j"]
+    },
+    {
+        "before": ["k"],
+        "after": ["g", "k"]
+    }
+```

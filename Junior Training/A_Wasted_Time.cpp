@@ -13,6 +13,7 @@ int main()
 		std::cin >> x2 >> y2;
 		if (i != 0)
 		{
+			// Formula: root((x2-x1)^2 + (y2-y1)^2)
 			length += sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 		}
 		x1 = x2;

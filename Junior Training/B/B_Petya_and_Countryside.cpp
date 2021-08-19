@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-
+// https://codeforces.com/contest/66/problem/B
 #ifndef ONLINE_JUDGE
 #include "../Debugging Tools/dbg.cpp"
 #include "../Debugging Tools/MemView.cpp"

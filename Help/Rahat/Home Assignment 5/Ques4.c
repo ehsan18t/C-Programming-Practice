@@ -7,7 +7,10 @@ void mystrrev(char[]);
 int main()
 {
     char str[1000];
+    printf("Enter a string: ");
     gets(str);
+    int len = mystrlen(str);
+    printf("%d\n", len);
     mystrrev(str);
     // printf("%s\n", str);     // if reversed string saved in current string variable
     return 0;

@@ -1,0 +1,17 @@
+All students info:
+A 1 12 160
+B 2 13 170
+C 3 11 120
+D 4 7 100
+E 5 14 180
+
+Top 4 students info:
+A 1 12 160
+B 2 13 170
+C 3 11 120
+E 5 14 180
+
+Students in range:
+A 1 12 160
+C 3 11 120
+D 4 7 100

@@ -8,7 +8,7 @@ void print_result(int[], int);
 
 int main()
 {
-    freopen("input.txt", "r", stdin); // debug
+    // freopen("input.txt", "r", stdin); // debug
     int w, n, max;
     int result[10] = {0};
     std::cin >> w >> n;

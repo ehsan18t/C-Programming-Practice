@@ -1,0 +1,5 @@
+1 Toyota 2016 70
+2 Nissan 2018 120
+3 Toyota 2021 150
+4 Nissan 2019 90
+5 Toyota 2020 130

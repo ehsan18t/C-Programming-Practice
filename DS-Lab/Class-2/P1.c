@@ -15,7 +15,7 @@ int main()
 
     // finding min index
     for (int i = 1; i < n; i++)
-        if(arr[1] < arr[minIndex])
+        if(arr[i] < arr[minIndex])
             minIndex = i;
 
     // printing output

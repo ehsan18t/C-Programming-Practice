@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // take some input in an array and
-// find the minimum among the input.
+// find the minimum.
 
 int main()
 {

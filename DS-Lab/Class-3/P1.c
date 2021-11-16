@@ -23,12 +23,12 @@ int main()
     // generating array
     generateArray(arr, n);
 
-    // sort array
-    insertionSort(arr, n);
-
-    // print sorted array
+    // print array
     printf("\n\nSorted Array:\n");
     printArray(arr, n);
+
+    // sort array
+    insertionSort(arr, n);
     
     // search item inside array
     resultIndex = binSearch(arr, n, searchValue);

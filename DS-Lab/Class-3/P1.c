@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
-int binSearch(int arr[], int len, int value);
-void insertionSort(int arr[], int n);
-void generateArray(int arr[], int len);
 void printArray(int array[], int len);
+void generateArray(int arr[], int len);
+void insertionSort(int arr[], int n);
+int binSearch(int arr[], int len, int value);
 
 int main()
 {
@@ -12,13 +13,10 @@ int main()
     int n, *arr;
     int searchValue, resultIndex;
     
-    // input
+    // input array size
     printf("Input array size: ");
     scanf("%d", &n);
     arr = (int *)malloc(sizeof(int) * n);
-    
-    printf("Input value to search: ");
-    scanf("%d", &searchValue);
     
     // generating array
     generateArray(arr, n);
@@ -26,6 +24,10 @@ int main()
     // print array
     printf("\n\nSorted Array:\n");
     printArray(arr, n);
+    
+    // input search value
+    printf("\n\nInput value to search: ");
+    scanf("%d", &searchValue);
 
     // sort array
     insertionSort(arr, n);

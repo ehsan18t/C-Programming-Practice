@@ -1,0 +1,14 @@
+Ahsan
+Bangladesh
+30 20 50
+1 0 5
+
+Asif
+Bangladesh
+100 5 60
+1 2 0
+
+Fahad
+Bangladesh
+10 5 60
+1 5 0

@@ -1,0 +1,4 @@
+Student ID: 011234002
+Bangla: 65 (3.25)
+English: 76 (3.75)
+Math: 36 (0.00)

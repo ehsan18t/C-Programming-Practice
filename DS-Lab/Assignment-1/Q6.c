@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void generateArray(int[], int);
 void swap(int *, int *);

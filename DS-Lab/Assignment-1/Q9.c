@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void inputIntToArray(int[], int);
 void insertionSortDescending(int[], int);

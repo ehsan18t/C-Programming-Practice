@@ -20,7 +20,7 @@ void display(node *head)
 
 int main()
 {
-    node *start = NULL, *prev = NULL, *temp;
+    node *start = NULL, *temp;
     int ans;
     printf("Do you want to add data: ");
     scanf("%d", &ans);

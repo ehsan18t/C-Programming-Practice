@@ -7,7 +7,6 @@
 std::string month_name[] = {"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"};
 int month_day[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 std::string day_name[] = {"SAT", "SUN", "MON", "TUE", "WED", "THU", "FRI"};
-int week_day[] = {1, 2, 3, 4, 5, 6, 7};
 
 //----------------------//
 // function declaration //
@@ -16,7 +15,7 @@ void displayCal(int skip, int total_days);
 int start_day(int month, int year);
 
 //-----------------------//
-// main/driver functions //
+// main/driver function //
 //-----------------------//
 int main()
 {
@@ -55,6 +54,7 @@ int main()
 void displayCal(int skip, int total_days)
 {
     int i = 0, skipped = 0, count = 1, loop = 1;
+
     // printing week names
     for (i = 0; i < 7; i++)
         std::cout << day_name[i] << "   ";
@@ -68,7 +68,7 @@ void displayCal(int skip, int total_days)
     }
 
     // printing all days of month
-    while (loop) // to print all days with week, 5 lines needed
+    while (loop)
     {
         for (int j = skipped; j < 7; j++)
         {
@@ -92,6 +92,7 @@ void displayCal(int skip, int total_days)
     }
 }
 
+// function to calculate first week day of a month 
 int start_day(int month, int year)
 {
     // according to, month JAN and FEB are treated as month 13 and 14 of previous year
@@ -100,6 +101,7 @@ int start_day(int month, int year)
         year -= 1;
         month += 12;
     }
+
     // always calculating the first day, q = 1
     return ((1 + (26 * (month + 1) / 10) + year + (year / 4) + 6 * (year / 100) + (year / 400)) % 7);
 }

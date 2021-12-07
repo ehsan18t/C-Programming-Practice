@@ -156,15 +156,19 @@ void selectionSort(int *arr, int n)
 }
 
 // insertion sort
-void insertionSort(int *arr, int n)
+void insertionSort(int arr[], int n)
 {
-    int i, j;
-    for (i = 1; i < n; i++)
+    for (int i = 1; i < n; i++)
     {
-        int tmp = arr[i];
-        for (j = i - 1; j >= 0 && arr[j] > tmp; j--)
+        int current = arr[i];
+        int j = i - 1;
+
+        while (j > -1 && arr[j] > current)
+        {
             arr[j + 1] = arr[j];
-        arr[j + 1] = tmp;
+            --j;
+        }
+        arr[j + 1] = current;
     }
 }
 

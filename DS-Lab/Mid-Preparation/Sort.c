@@ -155,6 +155,24 @@ void selectionSort(int *arr, int n)
     }
 }
 
+// replacement sort
+void replacementSort(int *arr, int n)
+{
+    int i, j;
+    for (i = 0; i < n; i++)
+    {
+        for (j = i + 1; j < n; j++)
+        {
+            if (arr[i] > arr[j])
+            {
+                int tmp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = tmp;
+            }
+        }
+    }
+}
+
 // insertion sort
 void insertionSort(int arr[], int n)
 {

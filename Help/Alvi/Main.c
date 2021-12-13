@@ -58,6 +58,7 @@ int main()
         case 6:
             /* Exit */
             loop = 0;
+            free(list->head);
             free(list);
             break;
         default:

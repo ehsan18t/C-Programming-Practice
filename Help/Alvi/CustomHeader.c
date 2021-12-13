@@ -185,6 +185,7 @@ Contact get_contact(ArrayList_Contact *list, int index)
 void clear_contacts(ArrayList_Contact *list)
 {
     memset(list->head, 0, sizeof(Contact) * list->capacity);
+    free(list->head);
     free(list);
     list = createList(10);
 }

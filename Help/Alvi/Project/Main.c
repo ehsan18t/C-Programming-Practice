@@ -78,6 +78,7 @@ void main_menu()
     printf("[3] Search Record\n");
     printf("[4] Modify Record\n");
     printf("[5] Delete Record\n");
+    printf("[6] Exit\n");
 }
 
 void header()

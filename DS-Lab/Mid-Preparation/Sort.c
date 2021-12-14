@@ -2,34 +2,34 @@
 #include <stdlib.h>
 
 // quick sort
-void quickSort(int *arr, int left, int right)
+int partition(int arr[], int start, int end)
 {
-    int i = left, j = right;
-    int tmp;
-    int pivot = arr[(left + right) / 2];
-
-    /* partition */
-    while (i <= j)
+    int pivot = arr[end];
+    int i = start - 1;
+    for (int j = start; j < end; j++)
     {
-        while (arr[i] < pivot)
-            i++;
-        while (arr[j] > pivot)
-            j--;
-        if (i <= j)
+        if (arr[j] < pivot)
         {
-            tmp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = tmp;
             i++;
-            j--;
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
         }
-    };
+    }
+    int temp = arr[i + 1];
+    arr[i + 1] = arr[end];
+    arr[end] = temp;
+    return i + 1;
+}
 
-    /* recursion */
-    if (left < j)
-        quickSort(arr, left, j);
-    if (i < right)
-        quickSort(arr, i, right);
+void quickSort(int *arr, int start, int end)
+{
+    if (start < end)
+    {
+        int q = partition(arr, start, end);
+        quickSort(arr, start, q - 1);
+        quickSort(arr, q + 1, end);
+    }
 }
 
 // merge sort
@@ -206,4 +206,16 @@ void bubbleSort(int *arr, int n)
             }
         }
     }
+}
+
+int main()
+{
+    int n = 5;
+    int arr[5] = {5, 4, 3, 2, 1};
+    quickSort(arr, 0, n - 1);
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    return 0;
 }

@@ -128,17 +128,17 @@ void remove_contact_at(ArrayList_Contact *list, int index)
 
     // left shift
     for (int i = index; i < list->size; i++)
-        list->head[i] = list->head[i - 1];
+        list->head[i] = list->head[i + 1];
     list->size--;
     sort_contact_asc(list);
     write_contacts("contacts.txt", list);
 }
 
-// O(1) -- Because the loop will run once
+// O(n) -- Because the loop will run once
 void remove_contact(ArrayList_Contact *list)
 {
     remove_contact_at(list, list->size - 1);
-    sort_contact_asc(list);
+    // sort_contact_asc(list);
     write_contacts("contacts.txt", list);
 }
 
@@ -178,7 +178,7 @@ Contact get_contact(ArrayList_Contact *list, int index)
         printf("Index out of range\n");
         return list->head[0];
     }
-    return *(list->head + index);
+    return *(list->head + index); // list->head[index];
 }
 
 // O(1)
@@ -324,6 +324,7 @@ void add_contact_screen(ArrayList_Contact *list)
     printf("Contact Added!\n\n");
 }
 
+// O(n)
 int *search_contact(ArrayList_Contact *list, char *name)
 {
     int flag = 0;

@@ -1,0 +1,11 @@
+Language: C
+Project:  Phonebook application
+
+Create a phone book. The phone book display detail phone information like your favourite cell phone.
+1) add record
+2) view list in ascending order
+3) search record
+4) modify record
+5) delete record
+
+Note: use file to store data

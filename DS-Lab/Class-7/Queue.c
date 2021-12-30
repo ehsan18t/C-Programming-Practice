@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+// has bugs. need to fix. (codes in this file does not work)
+
 void enqueue(int arr[], int *rear, int size, int value);
 int dequeue(int arr[], int *front, int rear);
 

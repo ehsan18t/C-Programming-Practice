@@ -2,7 +2,9 @@
 
 // Iterator
 #define FOR(i, n) for (int i = 0; i < n; i++)
-#define FORX(i, x, n) for (int i = x; i < n; i++)
+#define FORr(i, n) for (int i = n - 1; i >= 0; i--)
+#define FORx(i, x, n) for (int i = x; i < n; i++)
+#define FORxr(i, x, n) for (int i = n - 1; i >= x; i--)
 
 // Data Manupulation
 #define init(A, V) memset(A, V, sizeof(A))

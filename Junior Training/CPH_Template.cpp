@@ -150,6 +150,18 @@ namespace mem
 }
 /* #endregion */
 
+/* #region(collapsed) FUNCTIONS */
+// collected from stackoverflow
+// REF: https://stackoverflow.com/questions/14265581/parse-split-a-string-in-c-using-string-delimiter-standard-c
+std::vector<std::string> split(const std::string str, const std::string regex_str)
+{
+    std::regex regexz(regex_str);
+    std::vector<std::string> list(std::sregex_token_iterator(str.begin(), str.end(), regexz, -1), std::sregex_token_iterator());
+    return list;
+}
+
+/* #endregion */
+
 using namespace std;
 
 // Solution

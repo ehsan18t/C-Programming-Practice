@@ -15,8 +15,13 @@
 #define sqr(n) (n * n)
 
 // In/out
-#define in freopen("input.txt", "r", stdin);
-#define out freopen("output.txt", "w", stdout);
+#ifndef ONLINE_JUDGE
+#define in freopen("input.txt", "r", stdin)
+#define out freopen("output.txt", "w", stdout)
+#else
+#define in printf("")
+#define out printf("")
+#endif // !ONLINE_JUDGE
 
 // Data types
 #define db double
@@ -175,6 +180,8 @@ void solve()
 int main()
 {
     sync;
+    in;
+    out;
     int n;
     cin >> n;
     while (n--)

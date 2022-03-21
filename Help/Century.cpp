@@ -10,7 +10,6 @@ string add_one(string str)
     {
         if (i == 0)
         {
-            cout << "suc" << endl;
             str.at(i) = '0';
             str = "1" + str;
             flag = false;

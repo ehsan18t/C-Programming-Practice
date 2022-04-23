@@ -24,9 +24,7 @@ struct queue
 
     void enQueue(int val)
     {
-        node *new_node = (node *)malloc(sizeof(node));
-        new_node->val = val;
-        new_node->next = NULL;
+        node *new_node = new node(val);
 
         if (isEmpty())
         {
@@ -46,17 +44,21 @@ struct queue
     int deQueue()
     {
         node *temp = head;
+        if (isEmpty())
+            return -1;
         if (temp->next == NULL)
         {
+            int a = head->val;
             head = NULL;
+            delete (temp);
+            return a;
         }
         else
         {
-            while (temp->next->next != NULL)
-            {
-                temp = temp->next;
-            }
-            temp->next = NULL;
+            int a = head->val;
+            head = head->next;
+            delete (temp);
+            return a;
         }
     }
 
@@ -68,6 +70,7 @@ struct queue
     bool isFull()
     {
         // linked list implementation of queue is never going to be full
+        return false;
     }
 
     void print()

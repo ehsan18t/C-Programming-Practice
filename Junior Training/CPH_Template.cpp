@@ -6,6 +6,9 @@
 #define FORx(i, x, n) for (int i = x; i < n; i++)
 #define FORxr(i, x, n) for (int i = n - 1; i >= x; i--)
 #define for_map(m) for(auto it : m)
+
+// Lazy Map
+#define contains(m, k) (m.find(k) != m.end())
 #define K it.first
 #define V it.second
 

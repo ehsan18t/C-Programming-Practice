@@ -34,6 +34,7 @@
 #define db double
 #define ll long long
 #define ull unsigned long long
+#define umap unordered_map
 
 // Lazy
 #define pb push_back

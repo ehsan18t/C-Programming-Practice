@@ -4,7 +4,7 @@ int main()
 {
     int arr[50][50];
     int n, m, val, flag = 0;
-    int i, j;
+    int row, col;
 
     // input
     printf("Enter Row Size: ");
@@ -20,12 +20,14 @@ int main()
     scanf("%d", &val);
 
     // search
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (j = 0; j < m; j++)
+        for (int j = 0; j < m; j++)
         {
             if (arr[i][j] == val)
             {
+                row = i;
+                col = j;
                 flag = 1;
                 break;
             }
@@ -33,7 +35,7 @@ int main()
     }
 
     if (flag)
-        printf("Found at row: %d, col: %d\n", i, j);
+        printf("Found at row: %d, col: %d\n", row, col);
     else
         printf("Not Found!");
 

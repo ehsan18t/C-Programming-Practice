@@ -5,6 +5,9 @@
 #define FORr(i, n) for (int i = n - 1; i >= 0; i--)
 #define FORx(i, x, n) for (int i = x; i < n; i++)
 #define FORxr(i, x, n) for (int i = n - 1; i >= x; i--)
+#define for_map(m) for(auto it : m)
+#define K it.first
+#define V it.second
 
 // Data Manupulation
 #define init(A, V) memset(A, V, sizeof(A))
@@ -17,8 +20,8 @@
 
 // In/out
 #ifndef ONLINE_JUDGE
-#define in freopen("input.txt", "r", stdin)
-#define out freopen("output.txt", "w", stdout)
+#define in freopen("in.txt", "r", stdin)
+#define out freopen("out.txt", "w", stdout)
 #else
 #define in printf("")
 #define out printf("")

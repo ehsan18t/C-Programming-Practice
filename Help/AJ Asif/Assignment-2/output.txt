@@ -1,0 +1,122 @@
+Student 1:
+Name: Alman
+Id: 011203054
+Subject 1: 10 20 28 37 
+Subject 2: 9 18 30 35 
+Subject 3: 10 15 18 34 
+3.5
+
+Student 2:
+Name: Ahsan
+Id: 011273076
+Subject 1: 9 19 29 38 
+Subject 2: 10 19 30 39 
+Subject 3: 10 18 29 40 
+4.0
+
+Student 3:
+Name: Aladin
+Id: 0110767590
+Subject 1: 9 17 28 39 
+Subject 2: 9 18 30 37 
+Subject 3: 9 15 27 36 
+3.2
+
+Student 4:
+Name: Janifar
+Id: 011939087
+Subject 1: 10 15 30 35 
+Subject 2: 10 14 28 39 
+Subject 3: 10 19 28 37 
+3.9
+
+Student 5:
+Name: Hatim
+Id: 011201134
+Subject 1: 9 20 29 36 
+Subject 2: 8 18 28 39 
+Subject 3: 8 18 28 37 
+3.9
+
+Student 6:
+Name: Yeamin
+Id: 011203344
+Subject 1: 8 16 28 33 
+Subject 2: 8 17 25 35 
+Subject 3: 7 15 26 36 
+3.6
+
+Student 7:
+Name: Arnob
+Id: 011506759
+Subject 1: 8 19 26 37 
+Subject 2: 9 18 27 39 
+Subject 3: 8 16 28 34 
+3.7
+
+Student 8:
+Name: Fardin
+Id: 011201131
+Subject 1: 8 17 25 39 
+Subject 2: 7 18 30 34 
+Subject 3: 9 18 28 39 
+3.8
+
+Student 9:
+Name: Fahad
+Id: 011984565
+Subject 1: 10 18 28 35 
+Subject 2: 9 16 25 33 
+Subject 3: 7 17 27 39 
+3.8
+
+Student 10:
+Name: Rahat
+Id: 011456784
+Subject 1: 9 17 29 34 
+Subject 2: 10 19 29 36 
+Subject 3: 10 19 30 39 
+3.9
+
+Student 1: Subject 1 total: 95
+		   Subject 2 total: 92
+		   Subject 3 total: 77
+		   
+Student 2: Subject 1 total: 95
+		   Subject 2 total: 98
+		   Subject 3 total: 97
+		   
+Student 3: Subject 1 total: 93
+		   Subject 2 total: 94
+		   Subject 3 total: 87
+		   
+Student 4: Subject 1 total: 90
+		   Subject 2 total: 91
+		   Subject 3 total: 94
+		   
+Student 5: Subject 1 total: 94
+		   Subject 2 total: 93
+		   Subject 3 total: 91
+		   
+Student 6: Subject 1 total: 85
+		   Subject 2 total: 85
+		   Subject 3 total: 84
+		   
+Student 7: Subject 1 total: 90
+		   Subject 2 total: 93
+		   Subject 3 total: 86
+		   
+Student 8: Subject 1 total: 89
+		   Subject 2 total: 89
+		   Subject 3 total: 94
+		   
+Student 9: Subject 1 total: 91
+		   Subject 2 total: 83
+		   Subject 3 total: 90
+		   
+Student 10: Subject 1 total: 89
+		   Subject 2 total: 94
+		   Subject 3 total: 98
+		   
+Maximum CGPA: 4.0
+Minimum CGPA: 3.2

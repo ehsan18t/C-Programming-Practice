@@ -31,34 +31,24 @@
 #endif // !ONLINE_JUDGE
 
 // Data types
-#define db double
+#define dbl double
 #define ll long long
 #define ull unsigned long long
 #define umap unordered_map
 
 // Lazy
-#define pb push_back
+#define psb push_back
+#define ppb pop_back
 #define lg length()
 #define sz size()
 #define yes cout << "YES" << endl
 #define no cout << "NO" << endl
 
 // Opt
-#define sync                      \
-    ios_base::sync_with_stdio(0); \
-    cin.tie(0);                   \
-    cout.tie(0);
+#define sync ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 
-/* #region(collapsed) FUNCTIONS */
-// collected from stackoverflow
 // REF: https://stackoverflow.com/questions/14265581/parse-split-a-string-in-c-using-string-delimiter-standard-c
-std::vector<std::string> split(const std::string str, const std::string regex_str)
-{
-    std::regex regexz(regex_str);
-    std::vector<std::string> list(std::sregex_token_iterator(str.begin(), str.end(), regexz, -1), std::sregex_token_iterator());
-    return list;
-}
-/* #endregion */
+std::vector<std::string> split(const std::string str, const std::string regex_str) {std::regex regexz(regex_str); std::vector<std::string> list(std::sregex_token_iterator(str.begin(), str.end(), regexz, -1), std::sregex_token_iterator()); return list;}
 
 using namespace std;
 
@@ -73,7 +63,7 @@ int main()
     sync;
     in;
     out;
-    int n;
+    int n = 1;
     cin >> n;
     while (n--)
         solve();

@@ -58,7 +58,7 @@ using namespace std;
     for (int i = 0; i < n; i++) \
         cin >> arr[i];
 
-#define input(arr, n, m)            \
+#define input2d(arr, n, m)            \
     for (int i = 0; i < n; i++)     \
         for (int j = 0; j < m; j++) \
             cin >> arr[i][j];

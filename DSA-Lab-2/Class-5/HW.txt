@@ -1,0 +1,9 @@
+
+// HW: All Possible maximum activity selection
+
+5 10
+C 3 180
+M 4 350 
+H 8 160        
+K 10 110
+L 2 80

@@ -59,3 +59,11 @@ dkms.conf
 .vscode/
 .cph/
 .vs/
+
+# Ignore Extension-less files
+### Ignore everything
+*
+### Unignore Dir
+!*/
+### Unignore files with extension
+!*.*

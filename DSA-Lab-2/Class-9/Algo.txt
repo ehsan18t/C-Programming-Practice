@@ -1,0 +1,18 @@
+     ____ Dijkstra
+* SP |
+     ---- BFS
+* 0-1 Knapsack
+* LCS
+* KMP
+
+
+EVAL-3:
+    - SP
+    - 0-1 Knapsack
+
+FINAL:
+    - SP
+    - LCS
+    - KMP
+    - Activity Selection
+    - Div-Con

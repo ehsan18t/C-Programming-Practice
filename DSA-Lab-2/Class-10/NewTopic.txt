@@ -1,0 +1,3 @@
+- Slow fast pointer in liked list.
+- Problems with linked list.
+- 

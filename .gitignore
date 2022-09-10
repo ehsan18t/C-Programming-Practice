@@ -67,3 +67,8 @@ dkms.conf
 !*/
 ### Unignore files with extension
 !*.*
+
+# Ignore binary files
+*.exe
+*.bin
+*.o

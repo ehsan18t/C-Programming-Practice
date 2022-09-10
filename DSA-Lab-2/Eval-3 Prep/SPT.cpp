@@ -5,7 +5,6 @@
 #define in freopen("in.txt", "r", stdin)
 #define out freopen("out.txt", "w", stdout)
 #define INF(type) std::numeric_limits<type>::max()
-// #define INF(type) 1000000
 
 using namespace std;
 

@@ -17,7 +17,7 @@
 
 // Math
 #define PI 2 * acos(0.0)
-#define INF LLONG_MAX
+#define INF(type) std::numeric_limits<type>::max()
 #define sqr(n) (n * n)
 #define nCr(n, k) std::exp(std::lgamma(n + 1) - std::lgamma(k + 1) - std::lgamma(n - k + 1))
 

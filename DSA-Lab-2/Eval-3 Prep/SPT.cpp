@@ -1,5 +1,3 @@
-// HW: # videos from LMS and implement the code (LCS, KMP)
-
 #include <bits/stdc++.h>
 
 #define in freopen("in.txt", "r", stdin)
@@ -129,7 +127,6 @@ public:
             cout << i++ << " : " << d << endl;
     }
 
-    // need to fixed
     int getWeight(int src, int dest)
     {
         for (auto w : adjList[src])

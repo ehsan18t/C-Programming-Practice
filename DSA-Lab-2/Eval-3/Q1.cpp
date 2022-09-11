@@ -120,12 +120,16 @@ void solve()
 
     // Queries
     cin >> q;
+    vector<pair<int, int>> queries;
     while (q--)
     {
         int a, k;
         cin >> a >> k;
-        g.print(a, k);
+        queries.push_back({a, k});
     }
+
+    for (auto i : queries)
+        g.print(i.first, i.second);
 }
 
 int main()

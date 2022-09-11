@@ -107,7 +107,7 @@ void solve()
     cin >> n >> m >> src;
     graph g(n);
 
-    // Input
+    // Input edges
     for (int i = 0; i < m; i++)
     {
         int x, y, c;
@@ -115,10 +115,10 @@ void solve()
         g.addEdge(x, y, c);
     }
 
-    // find path
+    // generate shortest path tree
     g.dijk(src);
 
-    // Queries
+    // Input Queries
     cin >> q;
     vector<pair<int, int>> queries;
     while (q--)
@@ -128,6 +128,7 @@ void solve()
         queries.push_back({a, k});
     }
 
+    // print output
     for (auto i : queries)
         g.print(i.first, i.second);
 }

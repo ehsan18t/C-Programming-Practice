@@ -12,7 +12,10 @@ EVAL-3:
 
 FINAL:
     - SP
+    - 0-1 Knapsack
     - LCS
-    - KMP
     - Activity Selection
     - Div-Con
+
+Out:
+    - KMP 

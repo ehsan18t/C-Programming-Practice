@@ -11,10 +11,10 @@ EVAL-3:
     - 0-1 Knapsack
 
 FINAL:
-    - SP
-    - 0-1 Knapsack
+    - SP -------------------
+    - 0-1 Knapsack ---------
     - LCS
-    - Activity Selection
+    - Activity Selection ---
     - Div-Con
 
 Out:

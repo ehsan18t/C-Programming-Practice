@@ -6,11 +6,11 @@
 
 using namespace std;
 
-struct bag
+struct ques
 {
     int q;
-    int item;
-    int price;
+    int marks;
+    int time;
 };
 
 typedef vector<vector<int>> matrix;
@@ -28,7 +28,7 @@ typedef vector<vector<int>> matrix;
 #define maximum(a, b) (a > b ? a : b)
 
 // 0-1 knapsack
-matrix knapsack(vector<bag> &questions, int w)
+matrix knapsack(vector<ques> &questions, int w)
 {
     matrix dp = make_matrix(questions.size() + 1, w + 1);
 
@@ -38,8 +38,8 @@ matrix knapsack(vector<bag> &questions, int w)
         {
             if (i == 0 || j == 0)
                 dp[i][j] = 0;
-            else if (questions[i - 1].item <= j)
-                dp[i][j] = maximum(questions[i - 1].price + dp[i - 1][j - questions[i - 1].item], dp[i - 1][j]);
+            else if (questions[i - 1].marks <= j)
+                dp[i][j] = maximum(questions[i - 1].time + dp[i - 1][j - questions[i - 1].marks], dp[i - 1][j]);
             else
                 dp[i][j] = dp[i - 1][j];
         }
@@ -49,17 +49,17 @@ matrix knapsack(vector<bag> &questions, int w)
 }
 
 // finding selected list
-vector<bag> findSelected(matrix m, vector<bag> &questions)
+vector<ques> findSelected(matrix m, vector<ques> &questions)
 {
-    vector<bag> selected;
+    vector<ques> selected;
     int i = m.size() - 1, j = m[0].size() - 1;
 
     while (i > 0 && j > 0)
     {
         if (m[i][j] != m[i - 1][j])
         {
-            selected.push_back({questions[i - 1].q, questions[i - 1].item, questions[i - 1].price});
-            j -= questions[i - 1].item;
+            selected.push_back({questions[i - 1].q, questions[i - 1].marks, questions[i - 1].time});
+            j -= questions[i - 1].marks;
         }
         i--;
     }
@@ -72,7 +72,7 @@ void solve()
 {
     int n, w, max = -INF(int), sum = 0;
     cin >> n >> w;
-    vector<bag> products(n);
+    vector<ques> products(n);
 
     // input
     input(products, n);
@@ -86,9 +86,9 @@ void solve()
     // find max and sum
     for (auto p : selected)
     {
-        if (p.item > max)
-            max = p.item;
-        sum += p.item;
+        if (p.marks > max)
+            max = p.marks;
+        sum += p.marks;
     }
 
     // output

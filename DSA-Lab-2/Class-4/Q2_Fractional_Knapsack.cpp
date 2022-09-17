@@ -20,15 +20,18 @@ vector<Product> select(vector<Product> arr, double sack)
     vector<Product> selected;
     for (auto p : arr)
     {
-        if (p.weight < sack)
+        if (p.weight <= sack)
         {
             selected.push_back(p);
             sack -= p.weight;
         }
         else
         {
-            selected.push_back({p.name, sack, p.valPerUnit * sack, p.valPerUnit});
-            sack = 0;
+            if(sack > 0)
+            {
+                selected.push_back({p.name, sack, p.valPerUnit * sack, p.valPerUnit});
+                sack = 0;
+            }
             break;
         }
     }

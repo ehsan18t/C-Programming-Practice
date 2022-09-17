@@ -48,6 +48,24 @@ matrix knapsack(vector<product> &products, int w)
     return dp;
 }
 
+vector<product> findSelected(matrix m, vector<product> &products)
+{
+    vector<product> selected;
+    int i = m.size() - 1, j = m[0].size() - 1;
+
+    while (i > 0 && j > 0)
+    {
+        if (m[i][j] != m[i - 1][j])
+        {
+            selected.push_back({products[i - 1].name, products[i - 1].weight, products[i - 1].price});
+            j -= products[i - 1].weight;
+        }
+        i--;
+    }
+
+    return selected;
+}
+
 // Output
 void solve()
 {

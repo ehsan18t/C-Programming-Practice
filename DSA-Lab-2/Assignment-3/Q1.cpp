@@ -99,8 +99,8 @@ void solve()
 
 int main()
 {
-    in;
-    out;
+    // in;
+    // out;
     int n = 1;
     // cin >> n;
     while (n--)

@@ -3,12 +3,13 @@ import os
 
 # Configs
 remove_ext_less = True  # remove files without ext
-include_ext = ["exe", "bin"]    # Remove File Types
-ignore_list = [".git", ".vscode", "placeholder"]    # Ignore Files/Folders from Scanning
+include_ext = ["exe", "bin"]  # Remove File Types
+ignore_list = [".git", ".vscode", "placeholder"]  # Ignore Files/Folders from Scanning
 dir_name = os.getcwd()  # Current Directory
 
+
 # Functions
-def run_fast_scandir(dir, ignore = [], inc_ext = [], remove_ext_less = False):
+def run_fast_scandir(dir, ignore=[], inc_ext=[], remove_ext_less=False):
     subfolders, files = [], []
 
     for f in os.scandir(dir):
@@ -27,7 +28,7 @@ def run_fast_scandir(dir, ignore = [], inc_ext = [], remove_ext_less = False):
     return subfolders, files
 
 
-def deleteFile(filename):
+def delete_file(filename):
     if os.path.exists(filename) and not os.path.isdir(filename) and not os.path.islink(filename):
         os.remove(filename)
 
@@ -37,4 +38,4 @@ sf, file_list = run_fast_scandir(dir_name, ignore_list, include_ext, remove_ext_
 
 for item in file_list:
     print(f"-> Removing \"{item}\"")
-    deleteFile(os.path.join(dir_name, item))
+    delete_file(os.path.join(dir_name, item))

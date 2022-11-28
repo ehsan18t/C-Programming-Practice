@@ -1,0 +1,7 @@
+4
+silver-dust 300 4
+gold-dust 2000 8
+salt 80 10
+sugar 89 10
+2
+15 15

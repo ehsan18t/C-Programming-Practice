@@ -3,7 +3,7 @@ import os
 
 # Configs
 remove_ext_less = True  # remove files without ext
-include_ext = ["exe", "bin"]  # Remove File Types
+include_ext = ["exe", "bin", "prob"]  # Remove File Types
 ignore_list = [".git", ".vscode", "placeholder"]  # Ignore Files/Folders from Scanning
 dir_name = os.getcwd()  # Current Directory
 

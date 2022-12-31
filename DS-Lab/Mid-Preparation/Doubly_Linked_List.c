@@ -435,3 +435,36 @@ void print_list(node *head)
         printf("\n");
     }
 }
+
+void print_list_reverse(node *head)
+{
+    if (head == NULL)
+    {
+        printf("List is empty\n");
+    }
+    else
+    {
+        node *temp = head;
+        while (temp->next != NULL)
+        {
+            temp = temp->next;
+        }
+        while (temp != NULL)
+        {
+            printf("%d ", temp->data);
+            temp = temp->prev;
+        }
+        printf("\n");
+    }
+}
+
+int main()
+{
+    node *head = NULL;
+    add_node(&head, 1);
+    add_node(&head, 2);
+    add_node(&head, 3);
+    print_list(head);
+    print_list_reverse(head);
+    return 0;
+}

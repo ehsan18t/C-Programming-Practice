@@ -294,6 +294,16 @@ void delete_node_after_pos(node **head, int pos)
     temp->next = temp->next->next;
 }
 
+void print_list_reverse(node *head)
+{
+    if (head == NULL)
+    {
+        return;
+    }
+    display_reverse(head->next);
+    printf("%d ", head->data);
+}
+
 int main()
 {
     node *head = NULL;
@@ -301,5 +311,6 @@ int main()
     add_node(&head, 2);
     add_node(&head, 3);
     print_list(head);
+    print_list_reverse(head);
     return 0;
 }

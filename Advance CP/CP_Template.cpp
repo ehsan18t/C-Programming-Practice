@@ -1,18 +1,20 @@
 #include <bits/stdc++.h>
 
+#define INF(type) std::numeric_limits<type>::max()
+
 // Iterator
 #define FOR(i, n) for (int i = 0; i < n; i++)
 #define FORr(i, n) for (int i = n - 1; i >= 0; i--)
 #define FORx(i, x, n) for (int i = x; i < n; i++)
 #define FORxr(i, x, n) for (int i = n - 1; i >= x; i--)
-#define for_map(m) for(auto it : m)
+#define for_map(m) for (auto it : m)
 
 // Lazy Map
 #define contains(m, k) (m.find(k) != m.end())
 #define K it.first
 #define V it.second
 
-// Data Manupulation
+// Data Manipulation
 #define init(A, V) memset(A, V, sizeof(A))
 
 // Math

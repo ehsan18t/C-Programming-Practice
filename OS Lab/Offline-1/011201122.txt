@@ -1,0 +1,65 @@
+# Name: Md. Ehsan Khan
+# ID = 011 201 122
+# X = 122
+
+#1
+cd /tmp
+
+#2
+mkdir CSE4510_A_122
+
+#3
+cd CSE4510_A_122
+cp ~/Downloads/file.txt New_File1.txt
+cp ~/Downloads/file2.txt New_File2.txt
+cp ~/Downloads/file3.txt New_File3.txt
+
+#4
+touch File4.txt
+
+#5
+cat New_File1.txt New_File2.txt >> File4.txt
+
+#6
+sort New_File3.txt File4.txt > File_122.txt
+
+#7
+echo "Words: `wc -w File_122.txt`" && echo "Lines: `wc -l File_122.txt`"
+
+#8
+cat File_122.txt -n | head -9 | tail -8
+
+#9
+sudo useradd 011201122 --badname
+sudo passwd 011201122
+# --badname to ignore errors for user name starts with number
+
+#10
+sudo groupadd revoked
+sudo usermod -g revoked 011201122
+sudo chmod o-rw File_122.txt
+# The idea is that adding specific user to a separate newly created group
+# then revoke the desired permission for other group (o).
+
+#11
+su 011201122
+
+#12
+ehco "add someting" >> File_122.txt
+# does'nt have the permission
+
+#13
+su root
+
+#14
+cat *.txt | grep -E "[a-zA-Z]{3}. [0-9]{1,2}, [0-9]{4}"
+# direct grep is not working for some reason.
+
+#15
+cat *.txt | grep -E "[a-zA-Z]{3}. [0-9]{1,2}, [0-9]{4}" | grep -v "^Sep"
+
+#16
+cd /tmp
+rm -rf CSE4510_A_122
+
+

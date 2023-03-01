@@ -1,0 +1,25 @@
+1:
+mkdir Folder_1
+mkdir Folder_1/Folder_2 Folder_1/Folder_3
+
+2:
+rmdir Folder_1/Folder_2
+
+3:
+touch Folder_1/File_1.txt Folder_1/File_2.txt
+
+4:
+mv Folder_1/File_1.txt Folder_1/OS_B.txt
+
+5:
+ls -S -l Folder_1
+
+6:
+chmod g-x+w+r Folder_1/File_2.txt
+
+7:
+head -c -20  Folder_1/File_2.txt | tail -c -6
+
+8:
+grep -c -E "[0-9]{3}-[0-9]{4}-[0-9]{4}" Info.txt
+

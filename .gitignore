@@ -72,3 +72,5 @@ dkms.conf
 *.exe
 *.bin
 *.o
+*.prob
+*.json

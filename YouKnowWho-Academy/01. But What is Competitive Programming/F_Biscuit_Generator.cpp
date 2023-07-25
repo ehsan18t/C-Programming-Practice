@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 
+// https://atcoder.jp/contests/abc125/tasks/abc125_a?lang=en
+
 // Opt
 #define sync                      \
     ios_base::sync_with_stdio(0); \

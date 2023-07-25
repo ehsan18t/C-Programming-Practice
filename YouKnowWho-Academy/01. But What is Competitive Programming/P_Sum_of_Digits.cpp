@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 
+// https://codeforces.com/problemset/problem/102/B
+
 // Opt
 #define sync                      \
     ios_base::sync_with_stdio(0); \

@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 
-#define INF(type) std::numeric_limits<type>::max()
-
 // Iterator
 #define FOR(i, n) for (int i = 0; i < n; i++)
 #define FORr(i, n) for (int i = n - 1; i >= 0; i--)
@@ -27,9 +25,6 @@
 #ifndef ONLINE_JUDGE
 #define in freopen("in.txt", "r", stdin)
 #define out freopen("out.txt", "w", stdout)
-#else
-#define in printf("")
-#define out printf("")
 #endif // !ONLINE_JUDGE
 
 // Data types

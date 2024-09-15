@@ -25,6 +25,9 @@
 #ifndef ONLINE_JUDGE
 #define in freopen("in.txt", "r", stdin)
 #define out freopen("out.txt", "w", stdout)
+#else
+#define in printf("")
+#define out printf("")
 #endif // !ONLINE_JUDGE
 
 // Data types

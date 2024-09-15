@@ -1,12 +1,16 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
+#define ll long long
+
 // Core binary search function template with lambda for value retrieval
+// Template: https://github.com/ehsan18t/C-Programming-Practice/blob/main/Templates/Binary_Search.cpp
 template <typename T, typename GetValue>
-int binarySearch(int low, int high, T target, GetValue getValue) {
+ll binarySearch(ll low, ll high, T target, GetValue getValue) {
     while (low <= high) {
-        int mid = low + (high - low) / 2; // Avoid overflow
+        ll mid = low + (high - low) / 2; // Avoid overflow
         T midValue = getValue(mid); // Get the value at the current mid index
         if (midValue == target) {
             return mid; // Target found
@@ -21,25 +25,26 @@ int binarySearch(int low, int high, T target, GetValue getValue) {
 
 // Overload for containers with optional start and end
 template <typename Container>
-int binarySearch(const Container& arr, int target, int start = 0, int end = -1) {
+ll binarySearch(const Container& arr, ll target, ll start = 0, ll end = -1) {
     if (end == -1) {
         end = arr.size() - 1; // If end is not provided, default to the last index
     }
 
     // Pass a lambda to extract the value from the container at index 'mid'
-    return binarySearch<int>(start, end, target, [&](int mid) {
+    return binarySearch<ll>(start, end, target, [&](ll mid) {
         return arr[mid];
     });
 }
 
 // Overload for ranges with optional start
-int binarySearch(int target, int start = 1, int end = 100) {
+ll binarySearch(ll target, ll start = 1, ll end = 100) {
     // Pass a lambda to treat 'mid' as the value itself for number ranges
-    return binarySearch<int>(start, end, target, [&](int mid) {
+    return binarySearch<ll>(start, end, target, [&](ll mid) {
         return mid;
     });
 }
 
+// USES
 int main() {
     // Test with an array (start and end are optional)
     vector<int> arr = {1, 3, 5, 7, 9, 11};

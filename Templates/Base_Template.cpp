@@ -1,5 +1,36 @@
 #include <bits/stdc++.h>
 
+// --- Type Aliases ---
+using ll = long long;
+using ull = unsigned long long;
+using ld = long double;
+using pii = std::pair<int, int>;
+using pll = std::pair<ll, ll>;
+using vi = std::vector<int>;
+using vll = std::vector<ll>;
+using vpii = std::vector<pii>;
+#define umap unordered_map
+
+// --- Constants ---
+constexpr int MOD = 1e9 + 7;
+constexpr int INF = 1e9 + 7;
+constexpr ll LLINF = 1e18;
+
+// Fast I/O
+#define fast_io() std::ios_base::sync_with_stdio(false); std::cin.tie(NULL); std::cout.tie(NULL);
+void setup_io() {
+#ifndef ONLINE_JUDGE
+    freopen("in.txt", "r", stdin);
+    freopen("out.txt", "w", stdout);
+#endif
+}
+
+// Common Shortcuts
+#define pb push_back
+#define mp make_pair
+#define F first
+#define S second
+
 // Iterator
 #define FOR(i, n) for (int i = 0; i < n; i++)
 #define FORr(i, n) for (int i = n - 1; i >= 0; i--)
@@ -14,27 +45,53 @@
 
 // Data Manipulation
 #define init(A, V) memset(A, V, sizeof(A))
+#define ALL(x) (x).begin(), (x).end()
+#define RALL(x) (x).rbegin(), (x).rend()
 
-// Math
-#define PI 2 * acos(0.0)
-#define INF(type) std::numeric_limits<type>::max()
-#define sqr(n) (n * n)
-#define nCr(n, k) std::exp(std::lgamma(n + 1) - std::lgamma(k + 1) - std::lgamma(n - k + 1))
+// --- Math Shortcuts ---
+#define sqr(n) ((n) * (n))
+const double PI = acos(-1.0);
 
-// In/out
-#ifndef ONLINE_JUDGE
-#define in freopen("in.txt", "r", stdin)
-#define out freopen("out.txt", "w", stdout)
-#else
-#define in printf("")
-#define out printf("")
-#endif // !ONLINE_JUDGE
+// Modular exponentiation (binary exponentiation)
+long long power(long long base, long long exp) {
+    long long res = 1;
+    base %= MOD;
+    while (exp > 0) {
+        if (exp % 2 == 1) res = (res * base) % MOD;
+        base = (base * base) % MOD;
+        exp /= 2;
+    }
+    return res;
+}
 
-// Data types
-#define dbl double
-#define ll long long
-#define ull unsigned long long
-#define umap unordered_map
+// Modular inverse using Fermat's Little Theorem (MOD must be prime)
+long long modInverse(long long n) {
+    return power(n, MOD - 2);
+}
+
+// nCr % MOD. Assumes MOD is prime.
+// For multiple queries, precomputing factorials is much faster.
+long long nCr_mod(int n, int r) {
+    if (r < 0 || r > n) return 0;
+    if (r == 0 || r == n) return 1;
+    if (r > n / 2) r = n - r;
+    long long res = 1;
+    for (int i = 1; i <= r; ++i) {
+        res = (res * (n - i + 1)) % MOD;
+        res = (res * modInverse(i)) % MOD;
+    }
+    return res;
+}
+
+// nPr % MOD.
+long long nPr_mod(int n, int r) {
+    if (r < 0 || r > n) return 0;
+    long long res = 1;
+    for (int i = 0; i < r; ++i) {
+        res = (res * (n - i)) % MOD;
+    }
+    return res;
+}
 
 // Lazy
 #define psb push_back
@@ -43,9 +100,6 @@
 #define sz size()
 #define yes cout << "YES" << endl
 #define no cout << "NO" << endl
-
-// Opt
-#define sync ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 
 // REF: https://stackoverflow.com/questions/14265581/parse-split-a-string-in-c-using-string-delimiter-standard-c
 std::vector<std::string> split(const std::string str, const std::string regex_str) {std::regex regexz(regex_str); std::vector<std::string> list(std::sregex_token_iterator(str.begin(), str.end(), regexz, -1), std::sregex_token_iterator()); return list;}
@@ -60,12 +114,12 @@ void solve()
 
 int main()
 {
-    sync;
-    in;
-    out;
-    int n = 1;
-    cin >> n;
-    while (n--)
+    fast_io();
+    setup_io();
+
+    int t = 1;
+    cin >> t;
+    while (t--)
         solve();
     return 0;
 }
